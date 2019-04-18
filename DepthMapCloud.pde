@@ -98,8 +98,8 @@ class DepthMapCloud
       return;
 
     // set shader information
-    depthMapShader.set("depthMap", useColorAsInput ? colorMap : depthMap);
-    depthMapShader.set("colorMap", useColorAsInput ? depthMap : colorMap);
+    depthMapShader.set("depthMap", useColorAsInput ? depthMap : colorMap);
+    depthMapShader.set("colorMap", useColorAsInput ? colorMap : depthMap);
     depthMapShader.set("res", (float)width, (float)height);
     depthMapShader.set("flipDepth", flipDepth ? 1.0 : 0.0);
     depthMapShader.set("pointScale", pointSize);
