@@ -22,7 +22,9 @@ void setup()
   cam.setSuppressRollRotationMode();
 
   // depth images
-  cloud = createCloud("aargau_depth_bwd.png", "aargau_color.png", 3, 3.0, -60, true, false);
+  cloud = createCloud("swiss_depth.png", "swiss_color.png", 3, 3.0, -60, true, false);
+  //cloud = createCloud("aargau_depth_topo.png", "aargau_color_topo.png", 3, 3.0, -60, true, false);
+  //cloud = createCloud("aargau_depth_bwd.png", "aargau_color.png", 3, 3.0, -60, true, false);
   currentCloudName = "Aargau";
 
   cloud.setup();
@@ -32,7 +34,7 @@ void setup()
 
 void draw()
 {
-  background(22);
+  background(255);
 
   // draw cloud
   pushMatrix();

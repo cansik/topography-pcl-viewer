@@ -23,6 +23,8 @@ void setupUI()
   cp5.setColorForeground(color(255, 132, 124));
   cp5.setColorBackground(color(42, 54, 59));
   cp5.setFont(font, 14);
+  cp5.setColorCaptionLabel(color(0));
+  //cp5.setColorValueLabel(color(0));
   cp5.setColorActive(color(255, 132, 124));
 
   int h = 10;
