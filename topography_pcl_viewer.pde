@@ -22,7 +22,7 @@ void setup()
   cam.setSuppressRollRotationMode();
 
   // depth images
-  cloud = createCloud("aargau_depth_test.png", "aargau_color.png", 3, 3.0, -60, true, false);
+  cloud = createCloud("aargau_depth_bwd.png", "aargau_color.png", 3, 3.0, -60, true, false);
   currentCloudName = "Aargau";
 
   cloud.setup();

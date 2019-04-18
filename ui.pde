@@ -49,7 +49,7 @@ void setupUI()
 
   h += 50;
   cp5.addSlider("rangeMax", 10, 150, 10, h, 100, 20)
-    .setRange(0, -3000)
+    .setRange(0, -150)
     .setLabel("Depth Range")
     .setValue(cloud.rangeMax)
     .setSliderMode(Slider.FLEXIBLE)
@@ -60,7 +60,7 @@ void setupUI()
     .setRange(0.0, 1.0)
     .setLabel("Color / Depth Mix")
     .setSliderMode(Slider.FLEXIBLE)
-    .setValue(1.0)
+    .setValue(cloud.colorDepthMix)
     .plugTo(cloud);
 
   h += 50;
