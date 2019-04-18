@@ -21,9 +21,13 @@ void setup()
   cam = new PeasyCam(this, 620);
   cam.setSuppressRollRotationMode();
 
+  // change clipping
+  perspective(PI/3.0, (float)width/height, 0.1, 100000);
+
   // depth images
-  cloud = createCloud("swiss_depth.png", "swiss_color.png", 3, 3.0, -60, true, false);
-  //cloud = createCloud("aargau_depth_topo.png", "aargau_color_topo.png", 3, 3.0, -60, true, false);
+  //cloud = createCloud("sun_depth.png", "sun_color.png", 3, 3.0, -60, true, false);
+  //cloud = createCloud("swiss_depth.png", "swiss_color.png", 3, 3.0, -60, true, false);
+  cloud = createCloud("aargau_depth_topo.png", "aargau_color_topo.png", 3, 3.0, -60, true, false);
   //cloud = createCloud("aargau_depth_bwd.png", "aargau_color.png", 3, 3.0, -60, true, false);
   currentCloudName = "Aargau";
 
